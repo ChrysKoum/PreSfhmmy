@@ -68,7 +68,7 @@ export const BentoGridItem = ({
   // Redirect logic handled inside useEffect
   useEffect(() => {
     if (clicked) {
-      window.open("https://example.com", "_blank");
+      // window.open("https://example.com", "_blank");
     }
   }, [clicked]);
 
