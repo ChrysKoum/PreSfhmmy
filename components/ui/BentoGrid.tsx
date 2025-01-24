@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 
 // Also install this npm i --save-dev @types/react-lottie
@@ -65,9 +65,15 @@ export const BentoGridItem = ({
     },
   };
 
+  // Redirect logic handled inside useEffect
+  useEffect(() => {
+    if (clicked) {
+      window.open("https://example.com", "_blank");
+    }
+  }, [clicked]);
+
   const handleRedirect = () => {
     setClicked(true);
-    window.open("https://example.com", "_blank");
   };
 
   return (
