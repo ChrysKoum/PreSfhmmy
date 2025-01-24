@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: '3DThirteenPixel';
+  src: url('/fonts/3D-Thirteen-Pixel-Fonts.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixeloidMono';
+  src: url('/fonts/PixeloidMono.ttf') format('truetype'),
+       url('/fonts/PixeloidMono.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixeloidSans';
+  src: url('/fonts/PixeloidSans.ttf') format('truetype'),
+       url('/fonts/PixeloidSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixeloidSans-Bold';
+  src: url('/fonts/PixeloidSans-Bold.ttf') format('truetype'),
+       url('/fonts/PixeloidSans-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    /* Light Mode Colors */
+    --background: 120 40% 95%; /* Light Green Background */
+    --foreground: 120 25% 15%; /* Dark Green Foreground */
+
+    --card: 120 40% 95%; /* Light Green Card Background */
+    --card-foreground: 120 25% 15%; /* Dark Green Card Text */
+
+    --popover: 120 40% 95%; /* Light Green Popover Background */
+    --popover-foreground: 120 25% 15%; /* Dark Green Popover Text */
+
+    --primary: 120 60% 40%; /* Primary Green */
+    --primary-foreground: 120 100% 95%; /* Primary Text on Green */
+
+    --secondary: 120 40% 70%; /* Secondary Light Green */
+    --secondary-foreground: 120 60% 40%; /* Secondary Text */
+
+    --muted: 120 40% 70%; /* Muted Green */
+    --muted-foreground: 120 30% 50%; /* Muted Text */
+
+    --accent: 120 40% 70%; /* Accent Green */
+    --accent-foreground: 120 60% 40%; /* Accent Text */
+
+    --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
+    --destructive-foreground: 120 100% 95%; /* Text on Red */
+
+    --border: 120 60% 80%; /* Light Green Border */
+    --input: 120 60% 80%; /* Light Green Input Background */
+    --ring: 120 30% 40%; /* Green Ring for focus states */
+
+    --radius: 0.5rem; /* Border Radius */
+  }
+
+  .dark {
+    /* Dark Mode Colors */
+    --background: 120 25% 15%; /* Dark Green Background */
+    --foreground: 120 100% 95%; /* Light Green Foreground */
+
+    --card: 120 25% 15%; /* Dark Green Card Background */
+    --card-foreground: 120 100% 95%; /* Light Green Card Text */
+
+    --popover: 120 25% 15%; /* Dark Green Popover Background */
+    --popover-foreground: 120 100% 95%; /* Light Green Popover Text */
+
+    --primary: 120 100% 95%; /* Primary Light Green */
+    --primary-foreground: 120 60% 40%; /* Primary Text on Light Green */
+
+    --secondary: 120 30% 35%; /* Secondary Dark Green */
+    --secondary-foreground: 120 100% 95%; /* Secondary Text */
+
+    --muted: 120 30% 35%; /* Muted Dark Green */
+    --muted-foreground: 120 40% 60%; /* Muted Text */
+
+    --accent: 120 30% 35%; /* Accent Dark Green */
+    --accent-foreground: 120 100% 95%; /* Accent Text */
+
+    --destructive: 0 62.8% 30.6%; /* Red for destructive actions */
+    --destructive-foreground: 120 100% 95%; /* Text on Red */
+
+    --border: 120 30% 35%; /* Dark Green Border */
+    --input: 120 30% 35%; /* Dark Green Input Background */
+    --ring: 120 40% 70%; /* Light Green Ring for focus states */
+  }
+}
+
+@layer base {
+  /* Apply border and smooth scrolling to all elements */
+  * {
+    @apply border-border !scroll-smooth;
+  }
+
+  /* Set background and text colors for the body */
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Remove outline from active buttons */
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  /* Custom heading utility */
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}
