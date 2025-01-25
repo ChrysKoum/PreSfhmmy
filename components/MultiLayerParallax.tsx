@@ -9,8 +9,13 @@ export default function MultiLayerParallax() {
     target: ref,
     offset: ["start start", "end start"],
   });
+  const backgroundLayer1Y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["0%", "-50%"]
+  );
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
 
   return (
     <div
@@ -23,7 +28,7 @@ export default function MultiLayerParallax() {
           fontFamily: "'3DThirteenPixel', sans-serif",
           color: "#77bb4e",
         }}
-        className="font-bold text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl relative z-10"
+        className="font-bold text-center text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl relative z-10"
       >
         PreΣΦΗΜΜΥ 9
       </motion.h1>
@@ -59,8 +64,52 @@ export default function MultiLayerParallax() {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
+      {/* Background Layer 1 */}
+      <div
+        className="
+    absolute z-20 
+    w-[50%] h-[50%] 
+    md:w-[30%] md:h-[30%] // Default size for large screens
+    md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2 // Center on larger screens
+    -bottom-0  // Adjust position for small screens
+    bg-contain bg-no-repeat
+  "
+        style={{
+          backgroundImage: `url(/LogoPreΣΦΗΜΜΥwhite.png)`,
+        }}
+      />
 
       {/* Background Layer 2 */}
+      <div
+        className="
+    absolute z-20 
+    w-[50%] h-[50%] 
+    md:w-[30%] md:h-[30%] // Default size for large screens
+    md:bottom-3 md:right-5 // Default bottom-right for larger screens
+    -bottom-20
+    bg-contain bg-no-repeat
+  "
+        style={{
+          backgroundImage: `url(/PreΣΦΗΜΜΥ_9_moto.png)`,
+        }}
+      />
+
+      {/* Background Layer 3 */}
+      <div
+        className="
+    absolute z-20 
+    w-[30%] h-[30%] 
+    md:w-[20%] md:h-[20%] // Default size for large screens
+    md:bottom-14 md:left-24 // Default bottom-right for larger screens
+    bottom-56
+    bg-contain bg-no-repeat
+  "
+        style={{
+          backgroundImage: `url(/Call_for_Par.png)`,
+        }}
+      />
+
+      {/* Background Layer 4 */}
       <div
         className="absolute inset-0 z-10"
         style={{

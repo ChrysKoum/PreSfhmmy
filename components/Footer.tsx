@@ -7,11 +7,12 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10 mb-[100px] md:mb-5" id="contact">
       {/* background grid */}
-
+      {/* Ready to shape <span className="text-purple">the future</span> of
+      technology? */}
       <div className="flex flex-col items-center">
         <h1 className="font-pixeloidMono heading lg:max-w-[45vw]">
-          Ready to shape <span className="text-purple">the future</span> of
-          technology?
+          Are You Ready to
+          <span className="text-purple"> #ReachNewTechHeights</span>?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Join us at PreΣΦΗΜΜΥ 9 and let&apos;s tackle real-world challenges
@@ -28,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Made With 💚 from team ΣΦΗΜΜΥ
+          Made With 💚 from team ECESCON 16
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
@@ -44,7 +45,6 @@ const Footer = () => {
           ))}
         </div>
       </div>
-
       <div className="w-full absolute left-0 bottom-0 min-h-96">
         <img
           src="/footer-grid.svg"

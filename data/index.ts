@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Workshop", link: "#workshop" },
-  { name: "Contact", link: "#contact" },
+  { name: "Competition", link: "#workshop" },
+  { name: "Apply", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -17,7 +17,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Info Webinar Tune in 14/03 @ 15:00",
+    title: "Shaping the Post-pandemic SocIoTy",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -37,7 +37,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Smart Cities, Homes, and Buildings",
+    title: "Smart Cities, Homes and Buildings",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
