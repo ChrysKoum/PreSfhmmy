@@ -203,15 +203,18 @@ export const socialMedia = [
     id: 1,
     img: "/insta.svg",
     link: "https://www.instagram.com/sfhmmy",
+    name: "Instagram",
   },
   {
     id: 2,
     img: "/link.svg",
     link: "https://www.linkedin.com/company/ecescon",
+    name: "LinkedIn",
   },
   {
     id: 3,
     img: "/fb.png",
     link: "https://www.facebook.com/sfhmmy",
+    name: "Facebook",
   },
 ];

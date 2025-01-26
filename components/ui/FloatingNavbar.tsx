@@ -66,17 +66,24 @@ export const FloatingNav = ({
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
-          backgroundColor: "rgba(17, 25, 40, 0.75)",
+          backgroundColor: "#231f20",
           borderRadius: "12px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <div
-          className="w-16 h-16 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(/LogoΣΦΗΜΜΥ16dark.png)`,
-          }}
-        />
+        <a
+          href={"https://sfhmmy.gr/"}
+          target="_blank"
+          rel="noreferrer"
+          className="transition-transform transform hover:scale-110"
+        >
+          <div
+            className="w-16 h-16 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url(/LogoΣΦΗΜΜΥ16dark.png)`,
+            }}
+          />
+        </a>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}

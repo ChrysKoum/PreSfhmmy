@@ -15,7 +15,7 @@ export default function MultiLayerParallax() {
     ["0%", "-50%"]
   );
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
   return (
     <div
