@@ -135,7 +135,13 @@ export const BentoGridItem = ({
           <div
             className={`font-pixeloidMono text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >
-            {title}
+            {id === 2 ? (
+              <div>
+                Shaping the <br /> <b>Post-pandemic SocIoTy</b>
+              </div>
+            ) : (
+              title
+            )}
           </div>
 
           {/* for the github 3d globe */}

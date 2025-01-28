@@ -20,7 +20,7 @@ const Footer = () => {
       >
         {/* Main Content */}
         <div className="flex flex-col items-center">
-          <h1 className="font-pixeloidMono heading lg:max-w-[45vw] text-center">
+          <h1 className="font-pixeloidMono lg:max-w-[45vw] text-center text-xl sm:text-4xl md:text-5xl">
             Are You Ready to
             <span className="text-purple"> #ReachNewTechHeights</span>?
           </h1>
@@ -44,7 +44,7 @@ const Footer = () => {
             Made With 💚 from team ECESCON 16
           </p>
 
-          <div className="flex items-center md:gap-3 gap-6">
+          <div className="flex items-center mt-10 md:mt-0 md:gap-3 gap-6">
             {socialMedia.map((info) => (
               <a
                 href={info.link}

@@ -114,9 +114,9 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-10"
         style={{
           backgroundImage: `url(/1_bg_green_building.png)`,
-          backgroundPosition: "bottom", // Adjust this value to lower the building
-          backgroundSize: "contain", // Prevent stretching
-          backgroundRepeat: "no-repeat", // Optional:
+          backgroundPosition: "bottom", // Align the image to the bottom
+          backgroundSize: "contain", // Stretch the image to cover the entire container
+          backgroundRepeat: "no-repeat", // Prevent repeating the image
         }}
       />
     </div>
