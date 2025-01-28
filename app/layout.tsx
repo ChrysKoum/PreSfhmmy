@@ -29,7 +29,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <StairTransition />
           {children}
         </ThemeProvider>
       </body>
