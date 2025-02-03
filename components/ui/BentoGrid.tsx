@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 
@@ -7,6 +8,9 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -48,7 +52,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
+  const leftLists = ["SocIoTy", "SocIoTy", "SocIoTy"];
   const rightLists = ["SocIoTy", "SocIoTy", "SocIoTy"];
 
   const [clicked, setClicked] = useState(false);
@@ -132,12 +136,16 @@ export const BentoGridItem = ({
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
-          <div
-            className={`font-pixeloidMono text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
-            {id === 2 ? (
+          <div className={` text-lg lg:text-3xl max-w-96 font-bold z-10`}>
+            {id === 1 ? (
               <div>
-                Shaping the <br /> <b>Post-pandemic SocIoTy</b>
+                Low/No-Code <span className="text-orange">Solutions</span> that
+                change the world
+              </div>
+            ) : id === 2 ? (
+              <div>
+                Shaping the <br />
+                <span className="text-orange">Post-pandemic</span> SocIoTy
               </div>
             ) : (
               title
