@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 import { cn } from "@/lib/utils";
 
@@ -52,7 +53,9 @@ export const BentoGridItem = ({
   const leftLists = ["SocIoTy", "SocIoTy", "SocIoTy"];
   const rightLists = ["SocIoTy", "SocIoTy", "SocIoTy"];
 
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState<false | "github" | "participants">(
+    false
+  );
 
   const defaultOptions = {
     loop: clicked,
@@ -65,13 +68,22 @@ export const BentoGridItem = ({
 
   // Redirect logic handled inside useEffect
   useEffect(() => {
-    if (clicked) {
-      // window.open("https://example.com", "_blank");
+    if (clicked === "github") {
+      window.open("https://discord.gg/5a5ur6TwMf", "_blank");
+    } else if (clicked === "participants") {
+      const element = document.getElementById("participants");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, [clicked]);
 
-  const handleRedirect = () => {
-    setClicked(true);
+  interface RedirectTarget {
+    target: "github" | "participants";
+  }
+
+  const handleRedirect = (target: RedirectTarget["target"]) => {
+    setClicked(target);
   };
 
   return (
@@ -183,16 +195,22 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
+            <div className="mt-5 relative flex justify-between gap-10">
+              {/* Button on the left */}
               <MagicButton
                 title="Call for Participants"
                 icon={<FaLocationArrow />}
                 position="left"
-                handleClick={handleRedirect}
+                handleClick={() => handleRedirect("participants")}
+                otherClasses="!bg-[#231f20]"
+              />
+
+              {/* Button on the right */}
+              <MagicButton
+                title="Join The Discord Server"
+                icon={<FaGithub />}
+                position="left"
+                handleClick={() => handleRedirect("github")}
                 otherClasses="!bg-[#231f20]"
               />
             </div>
