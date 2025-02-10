@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
+import Details from "@/components/Details";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
@@ -19,6 +20,8 @@ const Home = () => {
       <MultiLayerParallax />
       <div className="max-w-7xl w-full ">
         <Grid />
+        <RecentProjects />
+        <Details />
         <Experience />
         <Approach />
         <Footer />

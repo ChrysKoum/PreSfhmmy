@@ -95,7 +95,10 @@ export const FloatingNav = ({
             <span className="block sm:hidden">{navItem.icon}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            <span
+              className="text-sm !cursor-pointer text-center"
+              dangerouslySetInnerHTML={{ __html: navItem.name }}
+            />
           </Link>
         ))}
         {/* remove this login btn */}
