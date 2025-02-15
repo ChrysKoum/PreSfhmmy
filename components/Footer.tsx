@@ -29,7 +29,7 @@ const Footer = () => {
             with innovative solutions!
           </p>
 
-          <a href="#participants">
+          <a href="https://forms.gle/bfdeGmvhxzAjiEaT8 " target="blank">
             <MagicButton
               title="Call for Participants"
               icon={<FaLocationArrow />}

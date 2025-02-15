@@ -82,7 +82,7 @@ export const projects = [
     title: "AppCreator: Visual System Application Builder",
     des: "A tool for visually creating system applications. Use an intuitive drag-and-drop interface to design, configure, and manage your system applications with ease.",
     img: "AppCreator.jpg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://locsys.issel.ee.auth.gr",
     popTitle: "AppCreator",
   },

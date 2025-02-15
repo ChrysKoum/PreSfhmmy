@@ -71,10 +71,7 @@ export const BentoGridItem = ({
     if (clicked === "github") {
       window.open("https://discord.gg/5a5ur6TwMf", "_blank");
     } else if (clicked === "participants") {
-      const element = document.getElementById("participants");
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+      window.open("https://forms.gle/bfdeGmvhxzAjiEaT8 ", "_blank");
     }
   }, [clicked]);
 
