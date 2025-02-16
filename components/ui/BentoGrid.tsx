@@ -204,7 +204,7 @@ export const BentoGridItem = ({
 
               {/* Button on the right */}
               <MagicButton
-                title="Join The Discord Server"
+                title="Join Discord"
                 icon={<FaGithub />}
                 position="left"
                 handleClick={() => handleRedirect("github")}
