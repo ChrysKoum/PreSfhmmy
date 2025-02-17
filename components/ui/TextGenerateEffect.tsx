@@ -14,22 +14,25 @@ export const TextGenerateEffect = ({
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
+  const isInView = useInView(containerRef, { once: true }); // Set once to false to allow re-animation
 
   useEffect(() => {
+    // Reset opacity when not in view
+    if (!isInView) {
+      animate("span", { opacity: 0 }, { duration: 0 });
+    }
+    // Animate when in view
     if (isInView) {
       animate(
         "span",
+        { opacity: 1 },
         {
-          opacity: 1,
-        },
-        {
-          duration: 2,
-          delay: stagger(0.2),
+          duration: 1,
+          delay: stagger(0.05),
         }
       );
     }
-  }, [isInView, animate, scope]);
+  }, [isInView, animate]);
 
   const renderWords = () => {
     return (

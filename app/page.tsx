@@ -20,10 +20,9 @@ const Home = () => {
       <MultiLayerParallax />
       <div className="max-w-7xl w-full ">
         <Grid />
-        <RecentProjects />
         <Details />
+        <RecentProjects />
         <Experience />
-        <Approach />
         <Footer />
       </div>
     </main>

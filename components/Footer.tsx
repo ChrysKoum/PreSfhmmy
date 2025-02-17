@@ -2,6 +2,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,22 +21,30 @@ const Footer = () => {
       >
         {/* Main Content */}
         <div className="flex flex-col items-center">
-          <h1 className="font-pixeloidMono lg:max-w-[45vw] text-center text-xl sm:text-4xl md:text-5xl">
+          <h1 className=" lg:max-w-[45vw] text-center text-xl sm:text-4xl md:text-5xl">
             Are You Ready to
-            <span className="text-purple"> #ReachNewTechHeights</span>?
+            <span className="text-purple"> solve the #SocIIoTyChallenge?</span>
           </h1>
-          <p className="text-white-200 md:mt-10 my-5 text-center max-w-lg">
-            Join us at PreΣΦΗΜΜΥ 9 and let&apos;s tackle real-world challenges
-            with innovative solutions!
+          <p className="text-white-200 text-xl md:mt-10 my-5 text-center">
+            Join us at PreΣΦΗΜΜΥ 9 and let's tackle real-world challenges
           </p>
 
-          <a href="https://forms.gle/bfdeGmvhxzAjiEaT8" target="blank">
-            <MagicButton
-              title="Call for Participants"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <a href="https://forms.gle/bfdeGmvhxzAjiEaT8" target="blank">
+              <MagicButton
+                title="Call for Participants"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="https://forms.gle/bfdeGmvhxzAjiEaT8" target="blank">
+              <MagicButton
+                title="Join Discord Server"
+                icon={<FaGithub />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
 
         {/* Footer Bottom */}

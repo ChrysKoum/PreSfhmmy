@@ -7,7 +7,7 @@ import { Button } from "./ui/MovingBorders";
 const Details = () => {
   return (
     <div className="py-20 w-full">
-      <h1 className="heading font-pixeloidMono mb-10">
+      <h1 className="heading mb-10">
         What is the <span className="text-purple">Topic</span>?
       </h1>
       <TextGenerateEffect className="text-4xl" words={wordSfhmmy} />
