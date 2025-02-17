@@ -1,6 +1,12 @@
 <div align="center">
   <br />
 
+  <img src="https://github.com/user-attachments/assets/a66b526b-e840-405b-a4c9-8b79047c3c34" alt="LogoΣΦΗΜΜΥ16dark" width="300"/>
+  <img src="https://github.com/user-attachments/assets/cfd22e46-f275-49e5-8563-7175261db24c" alt="LogoPreΣΦΗΜΜΥwhite" width="500"/>
+
+  <br />
+  <br />
+  
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next.js" />
     <img src="https://img.shields.io/badge/-Framer-black?style=for-the-badge&logoColor=white&logo=framer&color=0055FF" alt="Framer" />
