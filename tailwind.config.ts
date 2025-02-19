@@ -47,13 +47,11 @@ const config = {
         },
         white: {
           DEFAULT: "#FFF",
-          100: "#77bb4e",
-          200: "#77bb4e",
         },
         blue: {
           "100": "#0f2220",
         },
-        purple: "#73bf44",
+        green: "#73bf44",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

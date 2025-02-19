@@ -6,6 +6,46 @@ export const navItems = [
 
 export const gridItems = [
   {
+    id: 1,
+    title: "Low/No-Code Solutions that change the world",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/b1.svg",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "Shaping the Post-pandemic SocIoTy",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "Capture-the-Flag Challenges",
+    description: "Let the Best Win",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Smart Cities, Homes and Buildings",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+  {
     id: 5,
     title: "Problem Solving in Smart Environments using Locsys platform",
     description: "#SocIIoTy",
@@ -140,6 +180,20 @@ export const workExperience = [
     desc: "Design, test and provide your solutions for complex tasks in simulated smart environments",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Virtual Challenge Competitor",
+    desc: "Competed by solving various challenges in virtual smart environments with the Locsys platform.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Final Round Contestant",
+    desc: "Reached the finals of SocIIoTy by successfully solving complex tasks in simulated environments.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
   },
 ];
 

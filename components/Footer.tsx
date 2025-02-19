@@ -20,10 +20,10 @@ const Footer = () => {
         id="contact"
       >
         {/* Main Content */}
-        <div className="flex flex-col items-center">
-          <h1 className=" lg:max-w-[45vw] text-center text-xl sm:text-4xl md:text-5xl">
+        <div className="flex flex-col items-center ">
+          <h1 className=" lg:max-w-[45vw] text-center text-xl sm:text-4xl md:text-5xl font-pixeloidMono ">
             Are You Ready to
-            <span className="text-purple"> solve the #SocIIoTyChallenge?</span>
+            <span className="text-green"> solve the #SocIIoTyChallenge?</span>
           </h1>
           <p className="text-white-200 text-xl md:mt-10 my-5 text-center">
             Join us at PreΣΦΗΜΜΥ 9 and let&apos;s tackle real-world challenges
@@ -49,9 +49,15 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-          <p className="md:text-base text-sm md:font-normal font-light">
-            Made With 💚 from team ECESCON 16 Team
-          </p>
+          <a
+            href="https://chryskoum.github.io/ChrysK/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="md:text-base text-sm md:font-normal font-light">
+              Made With 💚 from ChrysKoum
+            </p>
+          </a>
 
           <div className="flex items-center mt-10 md:mt-0 md:gap-3 gap-6">
             {socialMedia.map((info) => (
