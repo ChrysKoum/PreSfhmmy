@@ -26,7 +26,7 @@ const Footer = () => {
             <span className="text-purple"> solve the #SocIIoTyChallenge?</span>
           </h1>
           <p className="text-white-200 text-xl md:mt-10 my-5 text-center">
-            Join us at PreΣΦΗΜΜΥ 9 and let's tackle real-world challenges
+            Join us at PreΣΦΗΜΜΥ 9 and let&apos;s tackle real-world challenges
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center">
