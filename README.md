@@ -14,13 +14,14 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind CSS" />
   </div>
 
-  <h3>SocIIoty Contest - PreΣΦΗΜΜΥ</h3>
+  <h1>SocIIoty Contest - PreΣΦΗΜΜΥ</h1>
+
+   <img src="/public/hero_screenshot.png" alt="PreΣΦΗΜΜΥ 9 Hero Screenshot" width="700" style="margin: 2rem 0; border-radius: 12px;" />
 
   <p>
     A repository showcasing the codebase and concepts behind <strong>PreΣΦΗΜΜΥ 9</strong>, 
     running alongside the annual <strong>ΣΦΗΜΜΥ</strong> conference.
   </p>
-
 <p> Here you’ll find the very first version I built and deployed on Vercel: <a href="https://pre-sfhmmy.vercel.app/">PreSFHMMY Site</a>. Once the new design guidelines were finalized, I launched the streamlined official PreSFHMMY site: <a href="https://presfhmmy.sfhmmy.gr/">PreSFHMMY Official</a>. For further background and resources, visit the main SFHMMY portal: <a href="https://sfhmmy.gr/">SFHMMY</a>. </p>
 
   <br />

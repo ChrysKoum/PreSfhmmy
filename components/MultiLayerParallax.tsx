@@ -28,7 +28,7 @@ export default function MultiLayerParallax() {
           fontFamily: "'3DThirteenPixel', sans-serif",
           color: "#77bb4e",
         }}
-        className="font-bold text-center text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl relative z-10 mt-12"
+        className="font-bold text-center text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl absolute top-80 sm:top-44 md:top-48 z-10"
       >
         PreΣΦΗΜΜΥ 9
       </motion.h1>
