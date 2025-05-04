@@ -2,7 +2,6 @@ import React from "react";
 
 import { wordSfhmmy } from "@/data";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
-import { Button } from "./ui/MovingBorders";
 
 const Details = () => {
   return (

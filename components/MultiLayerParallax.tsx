@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { FaAnglesDown } from "react-icons/fa6";
 
 export default function MultiLayerParallax() {
   const ref = useRef(null);
@@ -28,7 +28,7 @@ export default function MultiLayerParallax() {
           fontFamily: "'3DThirteenPixel', sans-serif",
           color: "#77bb4e",
         }}
-        className="font-bold text-center text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl relative z-10"
+        className="font-bold text-center text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl relative z-10 mt-12"
       >
         PreΣΦΗΜΜΥ 9
       </motion.h1>
@@ -119,6 +119,21 @@ export default function MultiLayerParallax() {
           backgroundRepeat: "no-repeat", // Prevent repeating the image
         }}
       />
+
+      {/* Animated Scroll Down Indicator */}
+      <a href="#about" className="cursor-pointer">
+        <motion.div
+          className="absolute bottom-8 z-30 flex flex-col items-center"
+          animate={{ y: [0, 16, 0] }}
+          transition={{
+            duration: 1.2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <FaAnglesDown className="text-white text-3xl opacity-80 drop-shadow-lg" />
+        </motion.div>
+      </a>
     </div>
   );
 }
