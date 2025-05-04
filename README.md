@@ -21,13 +21,7 @@
     running alongside the annual <strong>ΣΦΗΜΜΥ</strong> conference.
   </p>
 
-  <p>
-    For more information, visit 
-    <a href="https://sfhmmy.gr/">SFHMMY</a>, 
-    check out the <a href="https://presfhmmy.sfhmmy.gr/">PreSFHMMY Official</a> site, 
-    or explore the auto-deployed version on Vercel at 
-    <a href="https://pre-sfhmmy.vercel.app/">PreSFHMMY Site</a>.
-  </p>
+  <p> Check out the first version I created on Vercel: <a href="https://pre-sfhmmy.vercel.app/">PreSFHMMY Site</a>. Once the new design guidelines are finalized, visit the official PreSFHMMY site: <a href="https://presfhmmy.sfhmmy.gr/">PreSFHMMY Official</a>. For more background and resources, see the main SFHMMY portal: <a href="https://sfhmmy.gr/">SFHMMY</a>. </p>
 
   <br />
 </div>
